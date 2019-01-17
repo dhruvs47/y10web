@@ -1,0 +1,187 @@
+
+<html>
+
+    <!DOCTYPE html>
+   <center> <head>
+    <iframe src="backgroundaudio.mp3" allow="autoplay" style="display:none" id="iframeAudio" ></iframe>
+    <title> Nanotechnology </title>
+    <link href = 'about.css' rel = 'stylesheet' type = "text/css"> <!--UNDERSTAND THIS--> 
+    </head>
+    
+    <style>
+        
+    header 
+{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(coding.gif);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+        nav {height: 90%; 
+    width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    } 
+
+        h1{
+            font-family: monospace;
+            font-size: 50px;
+            color: white;
+            position: center;
+        }
+        
+        #html{
+            background-color: white;
+        }
+        #css{
+            background-image: linear-gradient(to bottom right, 	#FFB6C1, #20B2AA);
+        }
+        #javascript{
+            	 background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(eich.jpg);
+                height: 30vh;
+                background-size: cover;
+                background-position: center;
+                
+        }
+        
+       
+    </style>
+              
+        <header>
+    
+            <div class = "row">
+            <ul class='main-nav'>
+                <li><a href = 'index.html'>Home</a></li>
+                <li><a href = 'about.html'>About</a></li>
+                <li><a href = 'applications.html'>Applications</a></li>
+                <li><a href = ''>Contact</a></li>
+                <li><a href = 'https://www.ventureradar.com/keyword/Nanotechnology'>Companies</a></li>
+                <li class = 'active'><a href = ''>Tabtime</a></li>
+            
+            </ul>
+                
+            <nav><h1> The Inventors of Webdesign </h1></nav>
+                
+            </div>
+    
+          <div class="button" style="margin-left: 0% "> 
+                <a href='#html' class="btn btn-one">HTML Creator</a>
+                <a href='#css' class="btn btn-two">CSS Creator</a>
+                <a href='#javascript' class="btn btn-three">Javascript Creator</a>
+            </div>
+    
+        </header>
+
+<div id='html'>
+
+<center><h2>Tables of Time</h2>
+	
+<link href = 'style.css' rel = 'stylesheet' type = "text/css">
+    
+<h3>1989 - Tim Berners-Lee invents the WWW & HTML</h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Tim_Berners-Lee.jpg" width="150px"/>
+
+<table border="1">
+  <th>Inventer</th><th>Technology</th>
+  <tr>
+     <td>Tim Berners-Lee</td><td>WWW & HTML</td>
+  </tr>
+  <tr>
+     <td>Håkon Wium Lie</td><td>CSS</td>
+  </tr>
+  <tr>
+     <td>Brenden Eich</td><td>Javascript</td>
+  </tr>
+</table></center>
+    </div>
+<div id='css'>
+<center><h3 style="font-family: 'Roboto',sans-serif;color: aliceblue;font-size: 40px">1996 - Håkon Wium Lie invents CSS</h3>
+
+<img src="http://i.iinfo.cz/urs/hakon_wium_lie-121043715851298.jpg" width="150px"/></center>
+<style>
+
+#inventors {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: auto;
+}
+
+#inventors td, #inventors th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#inventors tr:nth-child(even){background-color: #f2f2f2;}
+
+#inventors tr:hover {background-color: azure;}
+
+#inventors th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+</style>
+
+<table id="inventors" border="1" style="font-family: cursive;font-size: 30px;object-position: center;">
+  <th>Inventor</th><th>Technology</th>
+  <tr>
+     <td>Tim Berners-Lee</td><td>WWW & HTML</td>
+  </tr>
+  <tr>
+     <td>Håkon Wium Lie</td><td>CSS</td>
+  </tr>
+  <tr>
+     <td>Brenden Eich</td><td>Javascript</td>
+  </tr>
+</table>
+    </div>
+<div id='javascript'>
+<h3>1995 - Brenden Eich invents JavaScript</h3>
+
+<div id="printmytable"></div>
+
+
+<script>
+
+
+
+function buildmyTable() {
+
+  var inventors = [{name:"Tim Berners-Lee",invention:"WWW & HTML"},{name:"Haken Wium Lie",invention:"CSS"},{name:"Brendan Eich",invention:"Javascript"}];
+
+  // build a string variable with all the table code and data
+  var mytable = "<table border='1'>";
+  mytable = mytable + "<th>Inventor</th><th>Invention</th>";
+
+  // loop through data table to add data
+  for (i = 0; i < inventors.length; i = i + 1) {
+    mytable = mytable + "<tr>";
+    mytable = mytable + "<td>" + inventors[i].name + "</td><td>" + inventors[i].invention + "</td>";
+    mytable = mytable + "</tr>";
+  }
+
+  mytable = mytable + "</table>";
+
+  // get the div and substitute mytable data for it
+  var placetoprint = document.getElementById("printmytable");
+  placetoprint.innerHTML = mytable;
+
+}
+
+buildmyTable()
+    
+    
+    </script>
+
+
+
+    </div></center>
+    </html>
